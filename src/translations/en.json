@@ -1,0 +1,273 @@
+{
+    "home-page-header": {
+        "specialty": "Medical specialty",
+        "find-doctor-by-their-specialty": "Find doctor by their specialty",
+        "facilities": "Medical facilities",
+        "find-hospital-or-clinic": "Find hospital or clinic",
+        "doctor": "Doctor",
+        "find-elite-doctor": "Find elite and good doctor",
+        "examination-pack": "Examination pack",
+        "general-examination": "General health examination",
+        "appointment": "Appointment",
+        "support": "Support",
+        "login": "Login"
+    },
+    "home-top-navigator": {
+        "option-home": "Home",
+        "option-specialty-exam": "Specialty exam",
+        "option-remote-exam": "Remote exam",
+        "option-general-exam": "General exam",
+        "option-medical-testing": "Medical testing",
+        "option-mental-health": "Mental health",
+        "option-dental-exam": "Dental exam"
+    },
+    "home-banner": {
+        "search-area-search-box-placeholder": "Search...",
+        "search-area-search-box-title": "Comprehensive healthcare platform",
+        "search-area-search-box-content": "Let us take care of you",
+        "search-area-quick-search-content-1": "My child has a long-term allergy. How can it be permanently cured?",
+        "search-area-quick-search-content-2": "Recently, there have been many cases of diseases, including diphtheria. Do you have any advice for people on how to prevent them?"
+    },
+    "side-bar": {
+        "side-bar-menu": "Sincerely"
+    },
+    "comprehensive-service-section": {
+        "section-title": "Comprehensive services",
+        "option-specialty-exam": "Specialty exam",
+        "option-general-exam": "General exam",
+        "option-mental-health": "Mental health",
+        "option-surgery-pack": "Surgery pack",
+        "option-health-exam": "Health exam",
+        "option-remote-exam": "Remote exam",
+        "option-medical-testing": "Medical testing",
+        "option-dental-exam": "Dental exam",
+        "option-diabetes": "Live healthy with diabetes",
+        "option-near-clinic": "Near clinic"
+    },
+    "specialty-section": {
+        "specialty-section-title": "Specialty",
+        "button-more-detail": "More",
+        "hepatitis": "Hepatitis",
+        "acupuncture": "Acupuncture",
+        "bone-and-joint-disease": "Bone and Joint",
+        "immune-system": "Immune System",
+        "spine": "Spine",
+        "dermatology": "Dermatology",
+        "pediatrics": "Pediatrics",
+        "obstetrics-and-gynecology": "Obstetrics and Gynecology",
+        "fetal-ultrasound": "Fetal Ultrasound",
+        "mental-health": "Mental Health",
+        "ent": "Ear, Nose, and Throat (ENT)",
+        "gastric-disease": "Gastric Disease",
+        "cardiology": "Cardiology",
+        "neurology": "Neurology",
+        "traditional-medicine": "Traditional Medicine"
+    },
+    "medical-facilities-section": {
+        "medical-facilities-section-title": "Medical facilities",
+        "button-more-detail": "More",
+        "hospital-1": "Military central hospital",
+        "hospital-2": "Meditec clinic",
+        "hospital-3": "Doctor check clinic",
+        "hospital-4": "Family doctor med247 clinic",
+        "hospital-5": "Saigon healthcare clinic",
+        "hospital-6": "Thucuc medical system",
+        "hospital-7": "International EXSON clinic",
+        "hospital-8": "International eye-care DND clinic ",
+        "hospital-9": "Cho Ray hospital",
+        "hospital-10": "Hung Viet general clinic",
+        "hospital-11": "HCM City's UMP hospital",
+        "hospital-12": "Testing central DIAG",
+        "hospital-13": "Andrology and fertility hospital",
+        "hospital-14": "National hospital of traditional medicine",
+        "hospital-15": "Hong Phat clinic"
+    },
+    "elite-doctor-section": {
+        "elite-doctor-section-title": "Outstanding doctor",
+        "more-detail-button": "More"
+    },
+    "remote-exam-section": {
+        "remote-exam-section-title": "Remote exam",
+        "button-more-detail": "More",
+        "option-1": "Mental health",
+        "option-2": "Bone and Joint",
+        "option-3": "Dermatology",
+        "option-4": "Pediatrician",
+        "option-5": "Internal Medicine Doctor",
+        "option-6": "Obstetrician-Gynecologist",
+        "option-7": "Otolaryngology",
+        "option-8": "Neurologist",
+        "option-9": "Gastroenterology",
+        "option-10": "Cardiology",
+        "option-11": "Pandemic Consultation",
+        "option-12": "Psychological Counseling"
+    },
+    "mental-health-section": {
+        "mental-health-section-title": "Mental health",
+        "button-more-detail": "More",
+        "option-1": "Mental health Test",
+        "option-2": "Mental health",
+        "option-3": "Psychological counseling",
+        "option-4": "Remote mental health",
+        "option-5": "Remote counseling"
+    },
+    "recent-disease-section": {
+        "recent-disease-section-title": "Recent diseases",
+        "button-more-detail": "More",
+        "guaranty-text-1": "Verified by the Statistics Office and the Ministry of Health.",
+        "guaranty-text-2": "Cited from reliable sources.",
+        "guaranty-text-3": "Provided to the public so that they can quickly grasp the situation and take preventive measures."
+    },
+    "stay-a-healthy-life-section": {
+        "stay-a-healthy-life-section-title": "Stay a healthy life",
+        "button-more-detail": "More",
+        "article-1": "Obesity Level 1: Causes, Symptoms, and Treatment.",
+        "article-2": "Safe and Effective Tooth Inflammation Treatment.",
+        "article-3": "Top 5 Common Diseases During the Rainy Season.",
+        "article-4": "Explained: Is Spinal Cord Compression Dangerous?",
+        "article-5": "Spinal Cord Compression: Causes, Symptoms, Diagnosis, and Treatment.",
+        "article-6": "Solution: Does Implant Placement Hurt?",
+        "article-7": "Comprehensive Information on Dental Implants.",
+        "article-8": "Guide to Oral Care After Implant Placement.",
+        "article-9": "Tooth Inflammation and What You Need to Know.",
+        "article-10": "Anaplastic Thyroid Cancer: Symptoms, Causes, and Treatment.",
+        "article-11": "Signs of Infection After Wisdom Tooth Extraction.",
+        "article-12": "Medullary Thyroid Cancer: Causes and Treatment.",
+        "article-13": "Blurred Vision Like a Veil: A Warning Sign of Dangerous Eye Diseases.",
+        "article-14": "Tips to Recognize Symptoms of Tooth Inflammation.",
+        "article-15": "Tooth Inflammation Is More Dangerous Than You Think."
+    },
+    "footer": {
+        "company": "One-Member Company",
+        "infor": "Information",
+        "service": "Services",
+        "security-term": "Privacy Policy",
+        "branch": "Branch",
+        "used-technology": "Technologies Used",
+        "tech-1": "NodeJS",
+        "tech-2": "Express",
+        "tech-3": "React",
+        "library": "And other supporting libraries",
+        "title": "Hello!",
+        "present": "We are Group 7 from the Web Technology and Online Services class taught by Mr. Do Ba Lam. Our group has four members: Phan Trung Duc (ID: 20215038), Pham Quang Duc (ID: 20194518), Bui Ta Duc (ID: 20215035), and Ho Van Duc (ID: 20215037). We hope that with this project, we can achieve a good grade in this course.",
+        "follow": "Follow me"
+    },
+    "common": {
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "decentralize": "Decentralize",
+        "close": "Close",
+        "save": "Save",
+        "refresh": "Refresh",
+        "accept": "Accept",
+        "confirm": "Confirm",
+        "confirm-this-task": "Are you sure to process this task?",
+        "fail-to-load-data": "Fail to load data",
+        "unknown-error": "There was an error",
+        "internal-server-error": "Internal server error",
+        "bad-request": "Bad request",
+        "forbiden-request": "Invalid input data",
+        "fail-to-load-all-code": "Fail to load data from allcode",
+        "sum": "Sum",
+        "date-range-invalid": "Date range invalid"
+    },
+    "login": {
+        "login": "Login",
+        "username": "Username",
+        "password": "Password",
+        "userpass-wrong": "Invalid username or password!"
+    },
+    "menu": {
+        "system": {
+            "header": "System",
+            "system-administrator": {
+                "header": "System Administrator",
+                "user-manage": "User manage",
+                "user-manage-by-redux": "User manage by Redux",
+                "register-package-group-or-account": "Register service package for group/account"
+            },
+            "system-parameter": {
+                "header": "System-parameter"
+            }
+        }
+    },
+    "system": {
+        "user-manage": {
+            "fail-to-load-fouser": "Fail to load system users list",
+            "user-id": "User ID",
+            "usertype": "User type",
+            "username": "Username",
+            "fullname": "Fullname",
+            "mobile": "Phone",
+            "email": "Email",
+            "status": "Status",
+            "add-user": "Add user",
+            "edit-user": "Edit user information",
+            "password": "Password",
+            "retype-password": "Retype password",
+            "add-user-success": "Add user successfully",
+            "edit-user-success": "Change user information successfully",
+            "add-user-fail": "Fail to add user",
+            "edit-user-fail": "Fail to change user information",
+            "del-user-success": "Delete user successfully",
+            "del-user-fail": "Fail to delete user",
+            "invalid-input": {
+                "username": "Please fill in username",
+                "fullname": "Please fill in fullname",
+                "password": "Please fill in password"
+            },
+            "sure-delete-user": "Are you sure to delete this user?"
+        },
+        "product-manage": {
+            "fail-to-load-foprtype": "Fail to load packages list",
+            "prid": "Package ID",
+            "prname": "Package name",
+            "prtype": "Package type",
+            "status": "Status",
+            "description": "Description",
+            "effective-date": "Effective date",
+            "expiration-date": "Expiration date",
+            "add-product": "Add package",
+            "add-product-success": "Add package successfully",
+            "add-product-fail": "Fail to add package",
+            "edit-product": "Edit package information",
+            "package-decentralize": "Package decentralize",
+            "edit-product-success": "Edit package information successfully",
+            "edit-product-fail": "Fail to edit package information",
+            "delete-product-success": "Delete package successfully",
+            "delete-product-fail": "Fail to delete package",
+            "invalid-input": {
+                "prid": "Please fill in package ID",
+                "prname": "Please fill in package name"
+            },
+            "fail-to-load-decentralize-info": "Fail to load decentralize info",
+            "save-decentralize-success": "Save decentralization successfully",
+            "save-decentralize-fail": "Fail to save decentralization",
+            "sure-delete-package": "Are you sure to delete this package?"
+        },
+        "register-package-group-or-acc": {
+            "assign-service-package-to-customer": "Assign service package to customer",
+            "package-name": "Package name",
+            "assign-type": "Assign type",
+            "cust-acc-group": "Customer/account group",
+            "effective-date": "Effective date",
+            "expiration-date": "Expiration date",
+            "assign": "Assign",
+            "manage-assign-groups": "Manage assign groups",
+            "group-cust-acc-name": "Group/customer account name",
+            "del-assign": "Del assign",
+            "fail-to-load-manage-assign-groups-list": "Fail to load manage assign groups list",
+            "invalid-selected": {
+                "currentfoProduct": "Invalid package",
+                "currentAssignType": "Invalid assign type",
+                "currentFoUser": "Invalid customer/account group"
+            },
+            "assign-service-package-to-customer-success": "Assign service package to customer successfully",
+            "assign-service-package-to-customer-fail": "Fail to assign service package to customer",
+            "remove-assign-success": "Unassign service package to customer successfully",
+            "remove-assign-fail": "Fail to unassign service package to customer",
+            "sure-delete-assign": "Are you sure to unassign service package to customer?"
+        }
+    }
+}
