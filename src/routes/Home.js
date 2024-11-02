@@ -4,12 +4,31 @@ import { connect } from 'react-redux';
 
 class Home extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            redirectTo: null,
+        };
+    }
+    
+    handleLoginClick = () =>{
+        this.setState({redirectTo:'/login'});
+    }
     render() {
         const { isLoggedIn } = this.props;
-        let linkToRedirect = isLoggedIn ? '/system/user-manage' : '/home';
+        const { redirectTo } = this.state;
+        if(isLoggedIn){
+            return <Redirect to = '/system/user-manage' />;
+        }
+        if(redirectTo === '/login'){
+            return <Redirect to = '/login'/>;
+        }
 
         return (
-            <Redirect to={linkToRedirect} />
+            <div>
+                <h1>Home Page</h1>
+                <button onClick={this.handleLoginClick}>Đăng nhập</button>
+            </div>
         );
     }
 

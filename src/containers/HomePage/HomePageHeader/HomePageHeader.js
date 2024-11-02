@@ -12,6 +12,7 @@ import { } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'react-intl';
 import { LANGUAGES } from "../../../utils";
 import { switchLanguageOfWebsite } from "../../../store/actions";
+import { withRouter } from 'react-router';
 
 class HomePageHeader extends Component {
 
@@ -19,6 +20,9 @@ class HomePageHeader extends Component {
         //fire redux events
         // khi gọi hàm ở đây có thể gọi bằng tên tự đặt bên hàm mapDisplatchToProp bên dưới
         this.props.switchLanguageOfWebsite(language);
+    }
+    handleLoginClick = () => {
+        this.props.history.push('/login'); // Điều hướng đến trang login
     }
 
     render() {
@@ -80,9 +84,11 @@ class HomePageHeader extends Component {
                                 <i className="far fa-question-circle"></i>
                                 <div className="header-right-section-title title-2"><FormattedMessage id="home-page-header.support" /></div>
                             </div>
-                            <div className="header-user-account-section">
+                            <div className="header-user-account-section" onClick={this.handleLoginClick}>
                                 <i className="far fa-user"></i>
-                                <div className="header-right-section-title title-3"><FormattedMessage id="home-page-header.login" /></div>
+                                <div className="header-right-section-title title-3">
+                                    <FormattedMessage id="home-page-header.login" />
+                                </div>
                             </div>
                             <div className="header-user-language-option">
                                 <div className={language === LANGUAGES.VI ? "header-user-nation-icon" : "header-user-nation-icon active"}></div>
@@ -240,4 +246,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePageHeader);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(HomePageHeader));
