@@ -51,10 +51,15 @@ const editUserService = (data) => {
     return axios.put('/api/edit-user-in-react', data);
 }
 
+const getEliteDoctorsForHomePageService = (limitEliteDoctor) => {
+    return axios.get(`/api/get-elite-doctor-for-homepage?limitEliteDoctor=${limitEliteDoctor}`);
+}
+
 export {
     handleLoginAPI,
     getAllUsersToDisplayInReact,
     createNewUserService,
     deleteUserService,
-    editUserService
+    editUserService,
+    getEliteDoctorsForHomePageService,
 };
