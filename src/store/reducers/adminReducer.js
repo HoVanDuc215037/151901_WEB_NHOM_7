@@ -25,6 +25,16 @@ const appReducer = (state = initialState, action) => {
                 isLoggedIn: false,
                 adminInfo: null
             }
+        case actionTypes.FETCH_ELITE_DOCTORS_VALUE_SUCCESSFULLY:
+            state.eliteDoctors = action.eliteDoctorsData;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ELITE_DOCTORS_VALUE_FAILED:
+            state.eliteDoctors = [];
+            return {
+                ...state,
+            }
         default:
             return state;
     }
