@@ -1,6 +1,7 @@
 import actionTypes from './actionTypes';
 import {
     getEliteDoctorsForHomePageService,
+    getSpecialtiesForHomePageService,
 } from "../../services/userService";
 
 export const adminLoginSuccess = (adminInfo) => ({
@@ -34,6 +35,30 @@ export const fetchEliteDoctors = () => {
             console.log('Fetch elite doctors data fail: ', e);
             dispatch({
                 type: actionTypes.FETCH_ELITE_DOCTORS_VALUE_FAILED,
+            })
+        }
+    }
+}
+
+export const fetchSpecialties = () => {
+    return async (dispatch, getState) => {
+        try {
+            let res = await getSpecialtiesForHomePageService('');
+            // console.log("Check res fetch specialties: ", res);
+            if (res && res.errCode === 0) {
+                dispatch({
+                    type: actionTypes.FETCH_SPECIALTIES_VALUE_SUCCESSFULLY,
+                    specialtiesData: res.data,
+                })
+            } else {
+                dispatch({
+                    type: actionTypes.FETCH_SPECIALTIES_VALUE_FAILED,
+                })
+            }
+        } catch (e) {
+            console.log('Fetch specialties data fail: ', e);
+            dispatch({
+                type: actionTypes.FETCH_SPECIALTIES_VALUE_FAILED,
             })
         }
     }

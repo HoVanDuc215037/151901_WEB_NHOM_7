@@ -55,6 +55,10 @@ const getEliteDoctorsForHomePageService = (limitEliteDoctor) => {
     return axios.get(`/api/get-elite-doctor-for-homepage?limitEliteDoctor=${limitEliteDoctor}`);
 }
 
+const getSpecialtiesForHomePageService = () => {
+    return axios.get(`/api/get-specialty-for-homepage`);
+}
+
 export {
     handleLoginAPI,
     getAllUsersToDisplayInReact,
@@ -62,4 +66,5 @@ export {
     deleteUserService,
     editUserService,
     getEliteDoctorsForHomePageService,
+    getSpecialtiesForHomePageService,
 };
