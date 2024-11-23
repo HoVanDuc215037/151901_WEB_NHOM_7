@@ -12,6 +12,7 @@ import Login from './Authenticate/Login.js';
 // import Header from './Header/Header';
 import System from '../routes/System';
 import { CustomToastCloseButton } from '../components/CustomToast';
+import DetailArticleForADoctor from './ForPatient/DetailDoctor/DetailArticleForADoctor.js';
 import ConfirmModal from '../components/ConfirmModal';
 import HomePage from './HomePage/HomePage.js';
 import CustomScrollbars from '../components/CustomScrollbars.js';
@@ -52,6 +53,7 @@ class App extends Component {
                                     {/* dành cho admin  */}
                                     <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
                                     {/* booking care cho bác sĩ và bệnh nhân*/}
+                                    <Route path={path.DETAIL_DOCTOR_ARTICLE} component={DetailArticleForADoctor} />
                                     <Route path={path.HOMEPAGE} component={(HomePage)} />
                                 </Switch>
                             </CustomScrollbars>

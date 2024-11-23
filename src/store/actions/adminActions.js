@@ -2,6 +2,7 @@ import actionTypes from './actionTypes';
 import {
     getEliteDoctorsForHomePageService,
     getSpecialtiesForHomePageService,
+    getInforAndArticleForADoctor,
 } from "../../services/userService";
 
 export const adminLoginSuccess = (adminInfo) => ({
@@ -59,6 +60,30 @@ export const fetchSpecialties = () => {
             console.log('Fetch specialties data fail: ', e);
             dispatch({
                 type: actionTypes.FETCH_SPECIALTIES_VALUE_FAILED,
+            })
+        }
+    }
+}
+
+export const fetchDoctorDetailsForDoctorManagePage = (id) => {
+    return async (dispatch, getState) => {
+        try {
+            let res = await getInforAndArticleForADoctor(id);
+            // console.log("Check doctor details in redux: ", res);
+            if (res && res.errCode === 0) {
+                dispatch({
+                    type: actionTypes.FETCH_DOCTOR_DETAILS_FOR_DOCTOR_MANAGE_PAGE_SUCCESSFULLY,
+                    detailsOfADoctor: res.data,
+                })
+            } else {
+                dispatch({
+                    type: actionTypes.FETCH_DOCTOR_DETAILS_FOR_DOCTOR_MANAGE_PAGE_FAILED,
+                })
+            }
+        } catch (e) {
+            console.log('Fetch doctor details fail: ', e);
+            dispatch({
+                type: actionTypes.FETCH_DOCTOR_DETAILS_FOR_DOCTOR_MANAGE_PAGE_FAILED,
             })
         }
     }
