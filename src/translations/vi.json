@@ -29,7 +29,19 @@
         "search-area-quick-search-content-2": "Dạo này xảy ra rất nhiều những trường hợp mắc bệnh, bạch hầu, bác sĩ có lời khuyên gì cho mọi người để phòng tránh?"
     },
     "side-bar": {
-        "side-bar-menu": "Kính chào"
+        "side-bar-menu": "Kính chào",
+        "side-bar-item": {
+            "managepage": "Trang quản lý",
+            "homepage": "Trang chủ",
+            "handbook": "Cẩm nang",
+            "cooperate": "Hợp tác",
+            "question": "Câu hỏi thường gặp",
+            "contact": "Liên hệ",
+            "service": "Dịch vụ",
+            "term": "Điều khoản sử dụng",
+            "regulation": "Quy chế hoạt động",
+            "about-us": "Về chúng tôi"
+        }
     },
     "comprehensive-service-section": {
         "section-title": "Dịch vụ toàn diện",
@@ -149,34 +161,11 @@
         "tech-3": "React",
         "library": "Và các thư viện hỗ trợ khác",
         "title": "Xin chào!",
-        "present": "Chúng mình là nhóm số 7 của lớp công nghệ Web và dịch vụ trực tuyến của thầy Đỗ Bá Lâm, chúng mình có 4 thành viên: Phan Trung Đức 20215038, Phạm Quang Đức 20194518, Bùi Tá Đức 20215035 và Ho Van Duc 20215037. Hy vọng với dự án này, chúng mình có thể có được điểm tốt trong học phần này.",
-        "follow": "Theo dõi"
-    },
-    "common": {
-        "add": "Thêm",
-        "edit": "Sửa",
-        "delete": "Xóa",
-        "decentralize": "Phân quyền",
-        "close": "Đóng",
-        "save": "Lưu",
-        "refresh": "Refresh",
-        "accept": "Chấp nhận",
-        "confirm": "Xác nhận",
-        "confirm-this-task": "Bạn có chắc chắn thực hiện tác vụ này?",
-        "fail-to-load-data": "Không thể tải về dữ liệu",
-        "unknown-error": "Có lỗi xảy ra",
-        "internal-server-error": "Lỗi kết nối",
-        "bad-request": "Yêu cầu không hợp lệ",
-        "forbiden-request": "Thông tin truyền vào không hợp lệ",
-        "fail-to-load-all-code": "Không thể tải về dữ liệu allcode",
-        "sum": "Tổng",
-        "date-range-invalid": "Khoảng thời gian không hợp lệ"
-    },
-    "login": {
-        "login": "Đăng nhập",
-        "username": "Tên đăng nhập",
-        "password": "Mật khẩu",
-        "userpass-wrong": "Sai tên đăng nhập hoặc mật khẩu!"
+        "present-1": "Mình là ",
+        "my-nick-name": "Phan Piscean",
+        "present-2": ", mình học IT-E6 ở Đại học Bách Khoa Hà Nội. Đây là dự án mình tạo ra với mục đích là học tập. Với giao diện sạch sẽ, chia layout dễ hiểu, thao tác đơn giản và tiếp cận nhiều người dùng , mình mong nhận dược sự ủng hộ của chính bản thân để có thể làm dự án pet của mình tiến xa hơn. Và hiện tại mình đang cố gắng áp dụng nhiều công nghệ nhất có thể ví dụ như Trí tuệ nhân tạo. Với sự giúp sức của Trí tuệ nhân tạo thì người dùng có thể sử dụng tốt ứng dụng này hơn.",
+        "follow": "Theo dõi",
+        "check-out-me": "Ghé thăm Github để biết thêm thông tin"
     },
     "menu": {
         "system": {
@@ -190,84 +179,121 @@
             "system-parameter": {
                 "header": "Tham số hệ thống"
             }
+        },
+        "content": {
+            "welcome-text": "Xin chào"
+        },
+        "admin": {
+            "menu-title-1": "Người dùng",
+            "menu-title-2": "Cơ sở y tế",
+            "menu-title-3": "Chuyên khoa",
+            "menu-title-4": "Bài đăng, cẩm nang",
+            "menu-title-5": "Trang chủ",
+            "user-CRUD": "CRUD người dùng",
+            "user-CRUD-by-redux": "CRUD người dùng bởi Redux",
+            "doctor-manage": "Quản lý Bác sĩ",
+            "admin-manage": "Quản lý quản trị viên",
+            "clinic-manage": "Quản lý Cơ sở y tế",
+            "exam-package-manage": "Quản lý Gói khám bệnh",
+            "exam-package-schedule-manage": "Kế hoạch khám của Gói khám",
+            "specialty-manage": "Quản lý chuyên khoa",
+            "article-handbook-manage": "Quản lý bài đăng, cẩm nang",
+            "user-manage-by-redux-form": {
+                "title": "Quản lý người dùng bằng Redux",
+                "email": "Thư điện tử (Email)",
+                "password": "Mật khẩu",
+                "firstName": "Tên",
+                "lastName": "Họ và tên đệm",
+                "address": "Địa chỉ",
+                "phoneNumber": "Số điện thoại",
+                "gender": "Giới tính",
+                "gender-value": {
+                    "male": "Nam",
+                    "female": "Nữ",
+                    "femboy": "trai cong",
+                    "tomboy": "nữ cong",
+                    "bisexual": "lưỡng tính"
+                },
+                "role": "Vai trò",
+                "role-value": {
+                    "patient": "Bệnh nhân",
+                    "admin": "Quản trị viên",
+                    "doctor": "Bác sĩ"
+                },
+                "position": "Vị trí",
+                "position-value": {},
+                "avatar-image": "Ảnh đại diện",
+                "image-preview": "Xem trước",
+                "image-upload": "Tải ảnh",
+                "image-delete": "Xóa ảnh",
+                "update-data-column": "Cập nhật",
+                "add-new-button": "Lưu người dùng",
+                "save-changes-button": "Lưu thay đổi"
+            }
+        },
+        "doctor": {
+            "manage-schedule-and-timetable": "Quản lý kế hoạch khám bệnh",
+            "schedule-and-timetable": "Kế hoạch khám bệnh",
+            "all-information-manage": "Quản lý thông tin"
         }
     },
-    "system": {
-        "user-manage": {
-            "fail-to-load-fouser": "Không thể tải về danh sách người dùng",
-            "user-id": "Mã người sử dụng",
-            "usertype": "Loại người dùng",
-            "username": "Tên người dùng",
-            "fullname": "Tên đầy đủ",
-            "mobile": "Số điện thoại",
-            "email": "Email",
-            "status": "Trạng thái",
-            "add-user": "Thêm người dùng",
-            "edit-user": "Sửa thông tin người dùng",
-            "password": "Mật khẩu",
-            "retype-password": "Nhập lại mật khẩu",
-            "add-user-success": "Thêm người dùng thành công",
-            "edit-user-success": "Thay đổi thông tin người dùng thành công",
-            "add-user-fail": "Thêm người dùng thất bại",
-            "edit-user-fail": "Thay đổi thông tin người dùng thất bại",
-            "del-user-success": "Xóa người dùng thành công",
-            "del-user-fail": "Xóa người dùng thất bại",
-            "invalid-input": {
-                "username": "Quý khách vui lòng nhập tên người dùng",
-                "fullname": "Quý khách vui lòng nhập tên đầy đủ",
-                "password": "Quý khách vui lòng nhập mật khẩu"
-            },
-            "sure-delete-user": "Bạn có chắc chắn muốn xóa người dùng này?"
+    "schedule-and-timetable-manage-page": {
+        "title": "Quản lý thời gian biểu và lịch khám",
+        "choose-dotor": "Chọn bác sĩ",
+        "choose-day": "Chọn ngày hẹn và khung giờ",
+        "save-button": "Lưu ngày hẹn"
+    },
+    "doctor-detail-page-for-patient": {
+        "schedule-section": {
+            "available-timeframe-section-title": "Thời gian khám:",
+            "sorry-text": "Xin lỗi quý khách, bác sĩ hiện không còn trống lịch hôm nay! Vui lòng chọn một hôm khác."
         },
-        "product-manage": {
-            "fail-to-load-foprtype": "Không thể tải về danh sách gói",
-            "prid": "Mã gói",
-            "prname": "Tên gói",
-            "prtype": "Loại gói",
-            "status": "Trạng thái",
-            "description": "Diễn giải",
-            "effective-date": "Ngày hiệu lực",
-            "expiration-date": "Ngày hết hiệu lực",
-            "add-product": "Thêm gói",
-            "add-product-success": "Thêm gói thành công",
-            "add-product-fail": "Thêm gói thất bại",
-            "edit-product": "Sửa thông tin gói",
-            "package-decentralize": "Phân quyền chức năng",
-            "edit-product-success": "Thay đổi thông tin gói thành công",
-            "edit-product-fail": "Thay đổi thông tin gói thất bại",
-            "delete-product-success": "Xóa gói thành công",
-            "delete-product-fail": "Xóa gói thất bại",
-            "invalid-input": {
-                "prid": "Quý khách vui lòng nhập mã gói",
-                "prname": "Quý khách vui lòng nhập tên gói"
-            },
-            "fail-to-load-decentralize-info": "Không thể tải về thông tin phân quyền chức năng",
-            "save-decentralize-success": "Lưu phân quyền chức năng thành công",
-            "save-decentralize-fail": "Lưu phân quyền chức năng thất bại",
-            "sure-delete-package": "Bạn có chắc chắn muốn xóa gói này?"
+            "extra-infor-section":{
+                "exam-address": "Địa chỉ khám",
+                "exam-price":"Giá khám",
+                "attention": "Chưa bao gồm phí siêu âm, xét nghiệm, chụp chiếu",
+                "no-note":"Bác sĩ không có chú thích gì thêm",
+                "payment-method-1":"Phòng khám nhận thanh toán bằng hình thức qua thẻ ngân hàng và tiền mặt",
+                "payment-method-2":"Phòng khám chỉ nhận thanh toán bằng hình thức qua thẻ ngân hàng",
+                "payment-method-3":"Phòng khám chỉ nhận thanh toán bằng hình thức tiền mặt",
+                "more-button":"Xem thêm",
+                "less-button":"Thu gọn"
+            }
+    },
+    "doctor-manage-page-for-admin": {
+        "page-title": "Tạo thông tin, bài báo cho bác sĩ",
+        "description-placeholder": "Thông tin giới thiệu:...",
+        "select-doctor-placeholder": "Chọn bác sĩ...",
+        "save-article-button": "Lưu bài báo",
+        "save-changes-button": "Lưu thay đổi"
+    },
+    "make-appointment-page":{
+        "right-content":{
+            "title":"Hồ sơ khám bệnh",
+            "name":"Họ và tên",
+            "gender":"Giới tính",
+            "dob":"Ngày sinh",
+            "address":"Địa chỉ (Nơi ở)",
+            "phonenum":"Số điện thoại",
+            "email":"Hòm thư điện tử (Email)",
+            "booking-for":"Đặt cho ai",
+            "reason":"Lý do khám bệnh",
+            "placeholder":{
+                "name": "Phan Piscean",
+                "dob": "Choose or input follow formatting: dd/mm/yyy",
+                "address": "1234 Main St",
+                "phonenum": "01234566789",
+                "email": "abc@gmail.com",
+                "booking-for": "Phan Piscean or relative",
+                "reason": "I have a suddenly headache"
+            }
         },
-        "register-package-group-or-acc": {
-            "assign-service-package-to-customer": "Gán gói dịch vụ cho khách hàng",
-            "package-name": "Tên gói",
-            "assign-type": "Loại gán",
-            "cust-acc-group": "Nhóm KH/Tài khoản",
-            "effective-date": "Ngày hiệu lực",
-            "expiration-date": "Ngày hết hiệu lực",
-            "assign": "Gán",
-            "manage-assign-groups": "Quản lý gán nhóm",
-            "group-cust-acc-name": "Tên nhóm/tài khoản KH",
-            "del-assign": "Xóa gán",
-            "fail-to-load-manage-assign-groups-list": "Không thể tải về thông tin quản lý gán nhóm",
-            "invalid-selected": {
-                "currentfoProduct": "Gói đang chọn không hợp lệ",
-                "currentAssignType": "Loại gán không hợp lệ",
-                "currentFoUser": "Nhóm KH/Tài khoản không hợp lệ"
-            },
-            "assign-service-package-to-customer-success": "Gán gói dịch vụ cho khách hàng thành công",
-            "assign-service-package-to-customer-fail": "Gán gói dịch vụ cho khách hàng thất bại",
-            "remove-assign-success": "Bỏ gán gói dịch vụ cho khách hàng thành công",
-            "remove-assign-fail": "Bỏ gán gói dịch vụ cho khách hàng thất bại",
-            "sure-delete-assign": "Bạn có chắc chắn muốn bỏ gán gói dịch vụ cho khách hàng?"
+        "left-content":{
+            "page-title":"Đặt lịch hẹn",
+            "specialty":"Bác sĩ khoa phụ sản",
+            "exam-price":"Giá khám khoa ",
+            "payment-method":"Thanh toán sau tại cơ sở y tế",
+            "receipt":"Tổng thanh toán (phí đặt lịch miễn phí): "
         }
     }
 }
