@@ -29,7 +29,19 @@
         "search-area-quick-search-content-2": "Recently, there have been many cases of diseases, including diphtheria. Do you have any advice for people on how to prevent them?"
     },
     "side-bar": {
-        "side-bar-menu": "Sincerely"
+        "side-bar-menu": "Sincerely",
+        "side-bar-item": {
+            "managepage": "Manage page",
+            "homepage": "Home page",
+            "handbook": "Handbook",
+            "cooperate": "Cooperate",
+            "question": "Question",
+            "contact": "Contact",
+            "service": "Services",
+            "term": "Term",
+            "regulation": "Regulations",
+            "about-us": "About us"
+        }
     },
     "comprehensive-service-section": {
         "section-title": "Comprehensive services",
@@ -149,34 +161,11 @@
         "tech-3": "React",
         "library": "And other supporting libraries",
         "title": "Hello!",
-        "present": "We are Group 7 from the Web Technology and Online Services class taught by Mr. Do Ba Lam. Our group has four members: Phan Trung Duc (ID: 20215038), Pham Quang Duc (ID: 20194518), Bui Ta Duc (ID: 20215035), and Ho Van Duc (ID: 20215037). We hope that with this project, we can achieve a good grade in this course.",
-        "follow": "Follow me"
-    },
-    "common": {
-        "add": "Add",
-        "edit": "Edit",
-        "delete": "Delete",
-        "decentralize": "Decentralize",
-        "close": "Close",
-        "save": "Save",
-        "refresh": "Refresh",
-        "accept": "Accept",
-        "confirm": "Confirm",
-        "confirm-this-task": "Are you sure to process this task?",
-        "fail-to-load-data": "Fail to load data",
-        "unknown-error": "There was an error",
-        "internal-server-error": "Internal server error",
-        "bad-request": "Bad request",
-        "forbiden-request": "Invalid input data",
-        "fail-to-load-all-code": "Fail to load data from allcode",
-        "sum": "Sum",
-        "date-range-invalid": "Date range invalid"
-    },
-    "login": {
-        "login": "Login",
-        "username": "Username",
-        "password": "Password",
-        "userpass-wrong": "Invalid username or password!"
+        "present-1": "I am ",
+        "my-nick-name": "Phan Piscean",
+        "present-2": ", a student of IT-E6 at Hanoi University of Science and Technology. This project was created for learning purposes. With a clean interface, understandable layout, simple interactions, and accessibility to many users, I hope to gain support from myself to push this pet project further. Currently, I am trying to apply as many technologies as possible, such as Artificial Intelligence. With the help of AI, users can better utilize this application.",
+        "follow": "Follow me",
+        "check-out-me": "Check out my github for more information"
     },
     "menu": {
         "system": {
@@ -190,84 +179,121 @@
             "system-parameter": {
                 "header": "System-parameter"
             }
+        },
+        "content": {
+            "welcome-text": "Welcome"
+        },
+        "admin": {
+            "menu-title-1": "User",
+            "menu-title-2": "Medical Facilities",
+            "menu-title-3": "Specialty",
+            "menu-title-4": "Article/handbook",
+            "menu-title-5": "Home page",
+            "user-CRUD": "User CRUD",
+            "user-CRUD-by-redux": "User CRUD by Redux",
+            "doctor-manage": "Doctor manage",
+            "admin-manage": "Admin manage",
+            "clinic-manage": "Medical facilities manage",
+            "exam-package-manage": "Exam package manager",
+            "exam-package-schedule-manage": "Exam package schedule manage",
+            "specialty-manage": "Specialty manage",
+            "article-handbook-manage": "Article/handbook manage",
+            "user-manage-by-redux-form": {
+                "title": "User manage by Redux",
+                "email": "Email",
+                "password": "Password",
+                "firstName": "First name",
+                "lastName": "Last name",
+                "address": "Address",
+                "phoneNumber": "Phone number",
+                "gender": "Gender",
+                "gender-value": {
+                    "male": "Male",
+                    "female": "Female",
+                    "femboy": "Femboy",
+                    "tomboy": "Tomboy",
+                    "bisexual": "Futanari"
+                },
+                "role": "Role",
+                "role-value": {
+                    "patient": "Patient",
+                    "admin": "Admin",
+                    "doctor": "Doctor"
+                },
+                "position": "Position",
+                "position-value": {},
+                "avatar-image": "Avatar",
+                "image-preview": "Image preview",
+                "image-upload": "Upload image",
+                "image-delete": "Delete image",
+                "update-data-column": "Update data",
+                "add-new-button": "Save new user",
+                "save-changes-button": "Save changes"
+            }
+        },
+        "doctor": {
+            "manage-schedule-and-timetable": "Manage exam schedule",
+            "schedule-and-timetable": "Exam schedule",
+            "all-information-manage": "All information manage"
         }
     },
-    "system": {
-        "user-manage": {
-            "fail-to-load-fouser": "Fail to load system users list",
-            "user-id": "User ID",
-            "usertype": "User type",
-            "username": "Username",
-            "fullname": "Fullname",
-            "mobile": "Phone",
-            "email": "Email",
-            "status": "Status",
-            "add-user": "Add user",
-            "edit-user": "Edit user information",
-            "password": "Password",
-            "retype-password": "Retype password",
-            "add-user-success": "Add user successfully",
-            "edit-user-success": "Change user information successfully",
-            "add-user-fail": "Fail to add user",
-            "edit-user-fail": "Fail to change user information",
-            "del-user-success": "Delete user successfully",
-            "del-user-fail": "Fail to delete user",
-            "invalid-input": {
-                "username": "Please fill in username",
-                "fullname": "Please fill in fullname",
-                "password": "Please fill in password"
-            },
-            "sure-delete-user": "Are you sure to delete this user?"
+    "schedule-and-timetable-manage-page": {
+        "title": "Schedule and timetable manage",
+        "choose-dotor": "Choose doctor",
+        "choose-day": "Choose appointment day and time frame",
+        "save-button": "Save appointment day"
+    },
+    "doctor-detail-page-for-patient": {
+        "schedule-section": {
+            "available-timeframe-section-title": "Arrange your time:",
+            "sorry-text": "Sorry, the doctor is currently busy today! Please choose another day!"
         },
-        "product-manage": {
-            "fail-to-load-foprtype": "Fail to load packages list",
-            "prid": "Package ID",
-            "prname": "Package name",
-            "prtype": "Package type",
-            "status": "Status",
-            "description": "Description",
-            "effective-date": "Effective date",
-            "expiration-date": "Expiration date",
-            "add-product": "Add package",
-            "add-product-success": "Add package successfully",
-            "add-product-fail": "Fail to add package",
-            "edit-product": "Edit package information",
-            "package-decentralize": "Package decentralize",
-            "edit-product-success": "Edit package information successfully",
-            "edit-product-fail": "Fail to edit package information",
-            "delete-product-success": "Delete package successfully",
-            "delete-product-fail": "Fail to delete package",
-            "invalid-input": {
-                "prid": "Please fill in package ID",
-                "prname": "Please fill in package name"
-            },
-            "fail-to-load-decentralize-info": "Fail to load decentralize info",
-            "save-decentralize-success": "Save decentralization successfully",
-            "save-decentralize-fail": "Fail to save decentralization",
-            "sure-delete-package": "Are you sure to delete this package?"
-        },
-        "register-package-group-or-acc": {
-            "assign-service-package-to-customer": "Assign service package to customer",
-            "package-name": "Package name",
-            "assign-type": "Assign type",
-            "cust-acc-group": "Customer/account group",
-            "effective-date": "Effective date",
-            "expiration-date": "Expiration date",
-            "assign": "Assign",
-            "manage-assign-groups": "Manage assign groups",
-            "group-cust-acc-name": "Group/customer account name",
-            "del-assign": "Del assign",
-            "fail-to-load-manage-assign-groups-list": "Fail to load manage assign groups list",
-            "invalid-selected": {
-                "currentfoProduct": "Invalid package",
-                "currentAssignType": "Invalid assign type",
-                "currentFoUser": "Invalid customer/account group"
-            },
-            "assign-service-package-to-customer-success": "Assign service package to customer successfully",
-            "assign-service-package-to-customer-fail": "Fail to assign service package to customer",
-            "remove-assign-success": "Unassign service package to customer successfully",
-            "remove-assign-fail": "Fail to unassign service package to customer",
-            "sure-delete-assign": "Are you sure to unassign service package to customer?"
+        "extra-infor-section":{
+            "exam-address": "Examination address",
+            "exam-price":"Examination price",
+            "attention": "The cost of ultrasound, tests, and scans is not included",
+            "no-note":"The doctor did not have any further comments",
+            "payment-method-1":"The clinic accepts payment via bank card and cash",
+            "payment-method-2":"The clinic only accepts payment via bank card",
+            "payment-method-3":"The clinic accepts payment via cash",
+            "more-button":"More",
+            "less-button":"Less"
         }
-    }
+    },
+    "doctor-manage-page-for-admin": {
+        "page-title": "Create information, article for doctor",
+        "description-placeholder": "Introduction information...",
+        "select-doctor-placeholder": "Choose doctor...",
+        "save-article-button": "Save article",
+        "save-changes-button": "Save changes"
+    },
+    "make-appointment-page":{
+        "right-content": {
+            "title": "Medical Records",
+            "name": "Full Name",
+            "gender": "Gender",
+            "dob": "Date of Birth",
+            "address": "Address",
+            "phonenum": "Phone Number",
+            "email": "Email",
+            "booking-for": "Booking For",
+            "reason": "Reason for Appointment",
+            "placeholder":{
+                "name": "Phan Piscean",
+                "dob": "Choose or input follow formatting: dd/mm/yyy",
+                "address": "1234 Main St",
+                "phonenum": "01234566789",
+                "email": "abc@gmail.com",
+                "booking-for": "Phan Piscean or relative",
+                "reason": "I have a suddenly headache"
+            }
+        },
+        "left-content": {
+            "page-title": "Booking Appointment",
+            "specialty": "Obstetrics and Gynecology Doctor",
+            "exam-price": "Obstetrics and Gynecology Examination Price",
+            "payment-method": "Pay Later at the Medical Facility",
+            "receipt": "Total Payment (Free Booking Fee):"
+        }
+    }     
 }
