@@ -59,6 +59,18 @@ const getSpecialtiesForHomePageService = () => {
     return axios.get(`/api/get-specialty-for-homepage`);
 }
 
+const getDoctorScheduleByDateService = (doctorId, date) => {
+    return axios.get(`/api/get-doctor-schedule-by-date?doctorId=${doctorId}&date=${date}`);
+}
+
+const getExtraInforDoctorByIdService = (doctorId) => {
+    return axios.get(`/api/get-extra-infor-doctor-by-id?doctorId=${doctorId}`);
+}
+
+const getInforAndArticleForADoctor = (id) => {
+    return axios.get(`/api/get-a-particular-doctor-infor-for-his-or-her-page?id=${id}`);
+}
+
 export {
     handleLoginAPI,
     getAllUsersToDisplayInReact,
@@ -67,4 +79,7 @@ export {
     editUserService,
     getEliteDoctorsForHomePageService,
     getSpecialtiesForHomePageService,
+    getDoctorScheduleByDateService,
+    getExtraInforDoctorByIdService,
+    getInforAndArticleForADoctor,
 };
