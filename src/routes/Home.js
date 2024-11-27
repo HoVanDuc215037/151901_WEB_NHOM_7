@@ -14,6 +14,9 @@ class Home extends Component {
     handleLoginClick = () =>{
         this.setState({redirectTo:'/login'});
     }
+    handleCategoryClick = () =>{
+        this.setState({redirectTo:'/CategoryCard'});
+    }
     render() {
         const { isLoggedIn } = this.props;
         const { redirectTo } = this.state;
@@ -23,13 +26,9 @@ class Home extends Component {
         if(redirectTo === '/login'){
             return <Redirect to = '/login'/>;
         }
-
-        return (
-            <div>
-                <h1>Home Page</h1>
-                <button onClick={this.handleLoginClick}>Đăng nhập</button>
-            </div>
-        );
+        if(redirectTo === '/CategoryCard'){
+            return <Redirect to = '/CategoryCard'/>;
+        }
     }
 
 }

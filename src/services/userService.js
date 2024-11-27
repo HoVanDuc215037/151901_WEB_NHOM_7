@@ -51,10 +51,35 @@ const editUserService = (data) => {
     return axios.put('/api/edit-user-in-react', data);
 }
 
+const getEliteDoctorsForHomePageService = (limitEliteDoctor) => {
+    return axios.get(`/api/get-elite-doctor-for-homepage?limitEliteDoctor=${limitEliteDoctor}`);
+}
+
+const getSpecialtiesForHomePageService = () => {
+    return axios.get(`/api/get-specialty-for-homepage`);
+}
+
+const getDoctorScheduleByDateService = (doctorId, date) => {
+    return axios.get(`/api/get-doctor-schedule-by-date?doctorId=${doctorId}&date=${date}`);
+}
+
+const getExtraInforDoctorByIdService = (doctorId) => {
+    return axios.get(`/api/get-extra-infor-doctor-by-id?doctorId=${doctorId}`);
+}
+
+const getInforAndArticleForADoctor = (id) => {
+    return axios.get(`/api/get-a-particular-doctor-infor-for-his-or-her-page?id=${id}`);
+}
+
 export {
     handleLoginAPI,
     getAllUsersToDisplayInReact,
     createNewUserService,
     deleteUserService,
-    editUserService
+    editUserService,
+    getEliteDoctorsForHomePageService,
+    getSpecialtiesForHomePageService,
+    getDoctorScheduleByDateService,
+    getExtraInforDoctorByIdService,
+    getInforAndArticleForADoctor,
 };
