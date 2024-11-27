@@ -10,33 +10,45 @@ class Home extends Component {
             redirectTo: null,
         };
     }
-    
-    handleLoginClick = () =>{
-        this.setState({redirectTo:'/login'});
+
+    componentDidMount() {
+        this.redirectUser();
     }
+
+    componentDidUpdate(prevProps) {
+        // Kiểm tra nếu props liên quan đến trạng thái đăng nhập hoặc thông tin người dùng thay đổi
+        if (prevProps.isLoggedIn !== this.props.isLoggedIn || prevProps.userInfo !== this.props.userInfo) {
+            this.redirectUser();
+        }
+    }
+
+    redirectUser = () => {
+        const { isLoggedIn, userInfo } = this.props;
+
+        if (isLoggedIn) {
+            // Kiểm tra vai trò người dùng và thiết lập liên kết điều hướng
+            const linkToRedirect = userInfo.roleId === 'R3' ? '/home' : userInfo.roleId === 'R2' ? '/doctor/schedule-manage' : '/system/user-manage';
+            this.setState({ redirectTo: linkToRedirect });
+        } else {
+            this.setState({ redirectTo: '/home' });
+        }
+    };
+
     render() {
-        const { isLoggedIn } = this.props;
         const { redirectTo } = this.state;
-        if(isLoggedIn){
-            return <Redirect to = '/system/user-manage' />;
-        }
-        if(redirectTo === '/login'){
-            return <Redirect to = '/login'/>;
+
+        if (redirectTo) {
+            return <Redirect to={redirectTo} />;
         }
 
-        return (
-            <div>
-                <h1>Home Page</h1>
-                <button onClick={this.handleLoginClick}>Đăng nhập</button>
-            </div>
-        );
+        return null; // Hoặc có thể thêm một số giao diện người dùng tạm thời ở đây nếu cần
     }
-
 }
 
 const mapStateToProps = state => {
     return {
-        isLoggedIn: state.user.isLoggedIn
+        isLoggedIn: state.user.isLoggedIn,
+        userInfo: state.user.userInfo,
     };
 };
 
