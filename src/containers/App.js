@@ -47,18 +47,16 @@ class App extends Component {
                         {/* {this.props.isLoggedIn && <Header />} */}
 
                         <div className="content-container">
-                            <CustomScrollbars style={{ height: '100vh', width: '100%' }}>
-                                <Switch>
-                                    <Route path={path.HOME} exact component={(Home)} />
-                                    <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
-                                    {/* dành cho admin  */}
-                                    <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
-                                    {/* booking care cho bác sĩ và bệnh nhân*/}
-                                    <Route path={path.DETAIL_DOCTOR_ARTICLE} component={DetailArticleForADoctor} />
-                                    <Route path={path.HOMEPAGE} component={(HomePage)} />
-                                    <Route path ={path.CATEGORY} component={(CategoryGrid)}/>
-                                </Switch>
-                            </CustomScrollbars>
+                            <Switch>
+                                <Route path={path.HOME} exact component={(Home)} />
+                                <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
+                                {/* dành cho admin  */}
+                                <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
+                                {/* booking care cho bác sĩ và bệnh nhân*/}
+                                <Route path={path.DETAIL_DOCTOR_ARTICLE} component={DetailArticleForADoctor} />
+                                <Route path={path.HOMEPAGE} component={(HomePage)} />
+                                <Route path={path.CATEGORY} component={(CategoryGrid)} />
+                            </Switch>
                         </div>
 
                         <ToastContainer
