@@ -59,6 +59,7 @@
         .left-contents {
             width: 40%;
             height: 100px;
+            text-decoration: none;
 
             .specialty-exam {
                 display: flex;
@@ -75,6 +76,14 @@
                     background-repeat: no-repeat;
                 }
             }
+            .custom-link {
+                text-decoration: none; 
+              }
+              
+              .custom-link:hover {
+                text-decoration: none; 
+              }
+              
 
             .general-exam {
                 display: flex;
