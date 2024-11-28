@@ -12,7 +12,8 @@ import { } from '@fortawesome/react-fontawesome';
 import { FormattedMessage } from 'react-intl';
 import { LANGUAGES } from "../../../../utils";
 import { switchLanguageOfWebsite } from "../../../../store/actions";
-
+import { Link } from 'react-router-dom';
+import { path } from '../../../../utils//constant';
 class ComprehensiveServiceSection extends Component {
 
     render() {
@@ -20,11 +21,13 @@ class ComprehensiveServiceSection extends Component {
             <div className="comprehensive-service-section">
                 <div className="section-title"><FormattedMessage id="comprehensive-service-section.section-title" /></div>
                 <div className="service-contents">
-                    <div className="left-contents">
+                    <div className="left-contents"> 
+                        <Link to={path.CATEGORY} className="custom-link">
                         <div className="specialty-exam content-background ">
                             <div className="service-icon-container"><div className="specialty-icon"></div></div>
                             <FormattedMessage id="comprehensive-service-section.option-specialty-exam" />
                         </div>
+                        </Link>
                         <div className="general-exam content-background">
                             <div className="service-icon-container"><div className="check-list-icon"></div></div>
                             <FormattedMessage id="comprehensive-service-section.option-general-exam" />
