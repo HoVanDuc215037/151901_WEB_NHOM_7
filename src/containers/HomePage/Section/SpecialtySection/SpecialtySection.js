@@ -91,6 +91,58 @@ class SpecialtySection extends Component {
                         </a></div>
                     </div>
                     <Slider {...settings}>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-1 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="medical-facilities-section.hospital-1" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-2 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="medical-facilities-section.hospital-2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-3 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="medical-facilities-section.hospital-3" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-4 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="medical-facilities-section.hospital-4" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-5 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="medical-facilities-section.hospital-5" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-6 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="medical-facilities-section.hospital-6" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-7 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="medical-facilities-section.hospital-7" />
+                                </div>
+                            </div>
+                        </div>
+
                         {arrSpecialty && arrSpecialty.length > 0 &&
                             arrSpecialty.slice(0, 15).map((item, index) => {
                                 let imageByBase64 = '';
