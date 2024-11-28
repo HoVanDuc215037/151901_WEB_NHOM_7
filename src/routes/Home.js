@@ -10,33 +10,57 @@ class Home extends Component {
             redirectTo: null,
         };
     }
-    
-    handleLoginClick = () =>{
-        this.setState({redirectTo:'/login'});
+
+    componentDidMount() {
+        this.redirectUser();
     }
+<<<<<<< HEAD
+    handleCategoryClick = () =>{
+        this.setState({redirectTo:'/CategoryCard'});
+    }
+=======
+
+    componentDidUpdate(prevProps) {
+        // Kiểm tra nếu props liên quan đến trạng thái đăng nhập hoặc thông tin người dùng thay đổi
+        if (prevProps.isLoggedIn !== this.props.isLoggedIn || prevProps.userInfo !== this.props.userInfo) {
+            this.redirectUser();
+        }
+    }
+
+    redirectUser = () => {
+        const { isLoggedIn, userInfo } = this.props;
+
+        if (isLoggedIn) {
+            // Kiểm tra vai trò người dùng và thiết lập liên kết điều hướng
+            const linkToRedirect = userInfo.roleId === 'R3' ? '/home' : userInfo.roleId === 'R2' ? '/doctor/schedule-manage' : '/system/user-manage';
+            this.setState({ redirectTo: linkToRedirect });
+        } else {
+            this.setState({ redirectTo: '/home' });
+        }
+    };
+
+>>>>>>> 2ad9a7012f12093d985da53f148cc23f7a1b18dc
     render() {
-        const { isLoggedIn } = this.props;
         const { redirectTo } = this.state;
-        if(isLoggedIn){
-            return <Redirect to = '/system/user-manage' />;
-        }
-        if(redirectTo === '/login'){
-            return <Redirect to = '/login'/>;
-        }
 
-        return (
-            <div>
-                <h1>Home Page</h1>
-                <button onClick={this.handleLoginClick}>Đăng nhập</button>
-            </div>
-        );
+        if (redirectTo) {
+            return <Redirect to={redirectTo} />;
+        }
+<<<<<<< HEAD
+        if(redirectTo === '/CategoryCard'){
+            return <Redirect to = '/CategoryCard'/>;
+        }
+=======
+
+        return null; // Hoặc có thể thêm một số giao diện người dùng tạm thời ở đây nếu cần
+>>>>>>> 2ad9a7012f12093d985da53f148cc23f7a1b18dc
     }
-
 }
 
 const mapStateToProps = state => {
     return {
-        isLoggedIn: state.user.isLoggedIn
+        isLoggedIn: state.user.isLoggedIn,
+        userInfo: state.user.userInfo,
     };
 };
 

@@ -16,6 +16,7 @@ import DetailArticleForADoctor from './ForPatient/DetailDoctor/DetailArticleForA
 import ConfirmModal from '../components/ConfirmModal';
 import HomePage from './HomePage/HomePage.js';
 import CustomScrollbars from '../components/CustomScrollbars.js';
+import CategoryGrid from "../containers/Specialized/CategoryGrid.js";
 
 class App extends Component {
 
@@ -55,6 +56,7 @@ class App extends Component {
                                     {/* booking care cho bác sĩ và bệnh nhân*/}
                                     <Route path={path.DETAIL_DOCTOR_ARTICLE} component={DetailArticleForADoctor} />
                                     <Route path={path.HOMEPAGE} component={(HomePage)} />
+                                    <Route path ={path.CATEGORY} component={(CategoryGrid)}/>
                                 </Switch>
                             </CustomScrollbars>
                         </div>
