@@ -277,33 +277,7 @@
         }
     }
 
-                @media only screen and (max-width: 431px) {
-                    .item-of-slider {
-                        display: flex !important;
-                        flex-direction: column !important;
-        
-                        width: 190px !important;
-                        margin: 0 !important;
-                    }
-        
-                    .slick-slide {
-                        width: 190px !important;
-                        margin-right: 10px !important;
-        
-                    }
-        
-                    .slick-track {
-                        width: max-content !important;
-                        /* gap: 10px !important; */
-                        height: unset !important;
-                    }
-        
-                    .item-content {
-                        width: unset !important;
-                    }
-        
-        
-                }
+
 }
 
 .stay-a-healthy-life-section-slider {
@@ -337,91 +311,5 @@
     .slick-dots li.slick-active button:before {
         opacity: .75;
         color: #5182c7;
-    }
-}
-
-@media only screen and (max-width: 431px) {
-    .stay-a-healthy-life-section {
-        width: 100% !important;
-    }
-
-    .stay-a-healthy-life-section-contents {
-        width: 100% !important;
-        padding-left: 80px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .stay-a-healthy-life-section-section-title {
-        margin: 0 !important;
-        height: unset !important
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .stay-a-healthy-life-section-section-title .title-text {
-        font-size: 20px !important;
-        margin-top: 20px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .stay-a-healthy-life-section-section-title .more-detail-button .button {
-        font-size: 15px !important;
-        padding: 10px 20px !important;
-        text-align: center !important;
-        vertical-align: middle !important;
-        height: unset !important;
-        margin-top: 10px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents {
-        width: 100% !important;
-        padding-left: 80px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .stay-a-healthy-life-section-section-title .title-text {
-        font-size: 20px !important;
-        margin: 20px !important;
-        height: unset !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .stay-a-healthy-life-section-section-title {
-        margin-left: 0 !important;
-        margin-bottom: 10px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .stay-a-healthy-life-section-section-title .spacing {
-        width: 10px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .slider-button-next::before {
-        right: 50px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents {
-        width: 100% !important;
-        padding-left: 80px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .stay-a-healthy-life-section-section-title .spacing {
-        width: 10px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .stay-a-healthy-life-section-section-title .title-text {
-        font-size: 20px !important;
-        margin: 0 !important;
-        margin-top: 10px !important;
-        width: 50% !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .item-content .item-of-slider .item-content {
-        width: unset !important;
-        height: max-content !important;
-        min-height: 75px !important;
-    }
-
-    .stay-a-healthy-life-section .stay-a-healthy-life-section-contents .item-content .item-of-slider .image-css {
-font-size: 20px;
-    width: 100% !important;
-    margin: 0 !important;
-    }
-
-    .slick-list {
-        height: 320px !important;
     }
 }

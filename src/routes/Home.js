@@ -14,9 +14,11 @@ class Home extends Component {
     componentDidMount() {
         this.redirectUser();
     }
-    handleCategoryClick = () =>{
-        this.setState({redirectTo:'/CategoryGrid'});
+
+    handleCategoryClick = () => {
+        this.setState({ redirectTo: '/CategoryCard' });
     }
+
 
     componentDidUpdate(prevProps) {
         // Kiểm tra nếu props liên quan đến trạng thái đăng nhập hoặc thông tin người dùng thay đổi
@@ -44,13 +46,13 @@ class Home extends Component {
         if (redirectTo) {
             return <Redirect to={redirectTo} />;
         }
-        if(redirectTo === '/CategoryGrid'){
-            return <Redirect to = '/CategoryGrid'/>;
+
+        if (redirectTo === '/CategoryCard') {
+            return <Redirect to='/CategoryCard' />;
         }
 
 
         return null; // Hoặc có thể thêm một số giao diện người dùng tạm thời ở đây nếu cần
-
     }
 }
 const mapStateToProps = state => {
