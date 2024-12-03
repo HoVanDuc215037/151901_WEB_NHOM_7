@@ -39,6 +39,10 @@ const createNewUserService = (data) => {
     return axios.post('/api/create-new-user-in-react', data)
 }
 
+const checkUserEmailIsAlreadyExist = (inputType) => {
+    return axios.get(`/api/check-user-email-already-exist?email=${inputType}`);
+}
+
 const deleteUserService = (userId) => {
     return axios.delete('/api/delete-user-in-react', {
         data: {
@@ -51,12 +55,28 @@ const editUserService = (data) => {
     return axios.put('/api/edit-user-in-react', data);
 }
 
+const getAllCodesService = (inputType) => {
+    return axios.get(`/api/getallcodesdata?type=${inputType}`);
+}
+
 const getEliteDoctorsForHomePageService = (limitEliteDoctor) => {
     return axios.get(`/api/get-elite-doctor-for-homepage?limitEliteDoctor=${limitEliteDoctor}`);
 }
 
-const getSpecialtiesForHomePageService = () => {
-    return axios.get(`/api/get-specialty-for-homepage`);
+const getAllDoctorsForDoctorArticlePageService = () => {
+    return axios.get('/api/get-all-doctors-for-doctor-article-page');
+}
+
+const saveInforAndArticleForADoctor = (data) => {
+    return axios.post('/api/save-infor-and-article-of-a-doctor', data);
+}
+
+const getInforAndArticleForADoctor = (id) => {
+    return axios.get(`/api/get-a-particular-doctor-infor-for-his-or-her-page?id=${id}`);
+}
+
+const createTimeframesForDoctorScheduleService = (data) => {
+    return axios.post('/api/bulk-create-timeframes-for-doctor-appointment-schedule', data);
 }
 
 const getDoctorScheduleByDateService = (doctorId, date) => {
@@ -67,8 +87,52 @@ const getExtraInforDoctorByIdService = (doctorId) => {
     return axios.get(`/api/get-extra-infor-doctor-by-id?doctorId=${doctorId}`);
 }
 
-const getInforAndArticleForADoctor = (id) => {
-    return axios.get(`/api/get-a-particular-doctor-infor-for-his-or-her-page?id=${id}`);
+const patientInforWhenBookingAppointment = (data) => {
+    return axios.post('/api/patient-infor-when-booking-time', data);
+}
+
+const confirmBookingAppointmentService = (data) => {
+    return axios.post('/api/confirm-booking-appointment', data);
+}
+
+const createNewSpecialtyService = (data) => {
+    return axios.post('/api/create-new-specialty', data);
+}
+
+const getSpecialtiesForHomePageService = () => {
+    return axios.get(`/api/get-specialty-for-homepage`);
+}
+
+const getAllSpecialtyDetailsById = (data) => {
+    return axios.get(`/api/get-specialty-by-id?id=${data.id}&location=${data.location}`);
+}
+
+const getAllRelativeInforsOfCurrentSystemUserService = (email) => {
+    return axios.get(`/api/get-all-relative-infors-of-current-system-user?email=${email}`);
+}
+
+const getAllRelativeBookingsOfCurrentSystemUserService = (email) => {
+    return axios.get(`/api/get-all-relative-bookings-of-current-system-user?email=${email}`);
+}
+
+const saveAppointmentHistory = (appointmentHistory) => {
+    return axios.post(`/api/save-appointment-history`, appointmentHistory);
+}
+
+const getAppointmentHistoriesByDoctorEmail = (doctorEmail) => {
+    return axios.get(`/api/get-appointement-histories-by-doctor-email?doctorEmail=${doctorEmail}`);
+}
+
+const getAllSpecialtyAndProvinceForMedicalFacilityManagePage = () => {
+    return axios.get(`/api/get-specialty-and-province-for-medical-facility-manage-page`);
+}
+
+const createMedicalFacility = (inputData) => {
+    return axios.post(`/api/create-medical-facility`, inputData);
+}
+
+const getInfoOfMedicalFacility = (facilityId) => {
+    return axios.get(`/api/get-info-of-medical-facility?id=${facilityId}`);
 }
 
 export {
@@ -77,9 +141,30 @@ export {
     createNewUserService,
     deleteUserService,
     editUserService,
+    getAllCodesService,
     getEliteDoctorsForHomePageService,
-    getSpecialtiesForHomePageService,
+    getAllDoctorsForDoctorArticlePageService,
+    saveInforAndArticleForADoctor,
+    getInforAndArticleForADoctor,
+    createTimeframesForDoctorScheduleService,
     getDoctorScheduleByDateService,
     getExtraInforDoctorByIdService,
-    getInforAndArticleForADoctor,
+    patientInforWhenBookingAppointment,
+    confirmBookingAppointmentService,
+    createNewSpecialtyService,
+    getSpecialtiesForHomePageService,
+    getAllSpecialtyDetailsById,
+    getAllRelativeInforsOfCurrentSystemUserService,
+    checkUserEmailIsAlreadyExist,
+    saveAppointmentHistory,
+    getAppointmentHistoriesByDoctorEmail,
+    getAllRelativeBookingsOfCurrentSystemUserService,
+    getAllSpecialtyAndProvinceForMedicalFacilityManagePage,
+    createMedicalFacility,
+    getInfoOfMedicalFacility,
 };
+console.log({
+    createTimeframesForDoctorScheduleService,
+    getAllRelativeInforsOfCurrentSystemUserService,
+    getInfoOfMedicalFacility,
+});

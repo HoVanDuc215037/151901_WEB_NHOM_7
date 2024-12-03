@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { push } from "connected-react-router";
-// import * as actions from "../store/actions";
 import * as actions from "../../store/actions";
 import './Login.scss';
 import { FormattedMessage } from 'react-intl';
 import { handleLoginAPI } from '../../services/userService';
+import CustomScrollbars from '../../components/CustomScrollbars';
+import { getAllRelativeInfoOfCurrentSystemUserAction } from '../../store/actions/adminActions.js';
+
+import { withRouter } from 'react-router';
 
 class Login extends Component {
     constructor(props) {
@@ -30,14 +33,12 @@ class Login extends Component {
         this.setState({
             username: event.target.value,
         })
-        console.log(event.target.value);
     }
 
     handleOnChangePasswordInput = (event) => {
         this.setState({
             password: event.target.value,
         })
-        console.log(event.target.value);
     }
 
     handleLoginButtonClicked = async (event) => {
@@ -64,6 +65,7 @@ class Login extends Component {
                 //đăng nhập thành công thì cần làm gì đó ở đây
                 //cần sử dụng tới redux
                 this.props.userLoginSuccess(data.user);
+                this.props.currentSystemUserInfo(data.user.email);
             }
         } catch (e) {
             if (e.response) {
@@ -81,6 +83,17 @@ class Login extends Component {
             passwordShown: !this.state.passwordShown,
         })
     }
+
+    handleEnterKeyPressed = (event) => {
+        if (event.key === 'Enter' || event.keyCode === 13) {
+            this.handleLoginButtonClicked();
+        }
+    }
+
+    handleRegisterClicked = () => {
+        this.props.history.push(`/register`);
+    }
+
     render() {
         //JSX
         return (
@@ -116,7 +129,9 @@ class Login extends Component {
                                     className="form-control input-place"
                                     placeholder="Enter your password"
                                     value={this.state.password}
-                                    onChange={(event) => this.handleOnChangePasswordInput(event)} />
+                                    onChange={(event) => this.handleOnChangePasswordInput(event)}
+                                    onKeyDown={(event) => this.handleEnterKeyPressed(event)}
+                                />
                                 <span
                                     onClick={(event) => { this.handleShowAndHidePassword() }}>
                                     <i className={this.state.passwordShown ? "far fa-eye" : "far fa-eye-slash"}></i>
@@ -133,10 +148,6 @@ class Login extends Component {
                             </div>
                         </div>
 
-
-                        <div className="col-12">
-                            <span className="forgot-password">For got your password?</span>
-                        </div>
                         <div className="or-login-with-options">
                             <span>Or login with:</span>
                         </div>
@@ -169,7 +180,8 @@ const mapDispatchToProps = dispatch => {
         navigate: (path) => dispatch(push(path)),
         // userLoginFail: () => dispatch(actions.adminLoginFail()),
         userLoginSuccess: (userInfor) => dispatch(actions.userLoginSuccess(userInfor)),
+        currentSystemUserInfo: (currentUserEmail) => dispatch(actions.getAllRelativeInfoOfCurrentSystemUserAction(currentUserEmail)),
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login));
