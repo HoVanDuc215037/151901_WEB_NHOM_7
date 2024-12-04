@@ -23,7 +23,7 @@ import ConfirmBookingAppointment from './ForPatient/ConfirmBookingAppointment/Co
 import DetailSpecialty from './ForPatient/DetailSpecialty/DetailSpecialty.js';
 import UserProfile from './UserProfile/UserProfile.js';
 import DefaultRegister from './Authenticate/DefaultRegister.js';
-import DetailMedicalFacility from './ForPatient/DetailMedicalFacility/DetailMedicalFacility.js';
+// import DetailMedicalFacility from './ForPatient/DetailMedicalFacility/DetailMedicalFacility.js';
 import AllSpecialties from './ForPatient/DetailSpecialty/AllSpecialties/AllSpecialties.js';
 
 class App extends Component {
@@ -71,8 +71,6 @@ class App extends Component {
                                 <Route path={path.CONFIRM_BOOKING_APPOINTMENT} component={ConfirmBookingAppointment} />
                                 {/* route trang chi tiết một chuyên khoa và các bac sĩ thuộc chuyên khoa đó */}
                                 <Route path={path.SPECIALTY_ARTICLE} component={DetailSpecialty} />
-                                {/* trang xem thông tin của một cơ sở y tế */}
-                                <Route path={path.MEDICAL_FACILITY_ARTICLE} component={DetailMedicalFacility} />
                                 {/* trang hồ sơ người dùng */}
                                 <Route path={path.USER_PROFILE} component={UserProfile} />
                                 {/* trang xem chi tiết tất cả các chuyên khoa */}

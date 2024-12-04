@@ -22,7 +22,7 @@ class ComprehensiveServiceSection extends Component {
                 <div className="section-title"><FormattedMessage id="comprehensive-service-section.section-title" /></div>
                 <div className="service-contents">
                     <div className="left-contents"> 
-                        <Link to={path.CATEGORY} className="custom-link">
+                        <Link to={path.ALL_SPECIALTIES} className="custom-link">
                         <div className="specialty-exam content-background ">
                             <div className="service-icon-container"><div className="specialty-icon"></div></div>
                             <FormattedMessage id="comprehensive-service-section.option-specialty-exam" />

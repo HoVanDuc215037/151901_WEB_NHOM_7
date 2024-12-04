@@ -34,9 +34,9 @@ class HomeFooter extends Component {
                             <div className="footer-col">
                                 <h4><b><FormattedMessage id="footer.used-technology" /></b></h4>
                                 <ul>
-                                    <li><a href="https://nodejs.org/fr" target="_blank"><FormattedMessage id="footer.tech-1" /></a></li>
-                                    <li><a href="https://expressjs.com/" target="_blank"><FormattedMessage id="footer.tech-2" /></a></li>
-                                    <li><a href="https://react.dev/" target="_blank"><FormattedMessage id="footer.tech-3" /></a></li>
+                                    <li><a href="https://nodejs.org/fr" target="_blank" rel="noreferrer"><FormattedMessage id="footer.tech-1" /></a></li>
+                                    <li><a href="https://expressjs.com/" target="_blank" rel="noreferrer"><FormattedMessage id="footer.tech-2" /></a></li>
+                                    <li><a href="https://react.dev/" target="_blank" rel="noreferrer"><FormattedMessage id="footer.tech-3" /></a></li>
                                     {/* <li><a href="#">order status</a></li>
                                     <li><a href="#">payment options</a></li> */}
                                 </ul>

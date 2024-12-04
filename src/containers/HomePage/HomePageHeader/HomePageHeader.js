@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import './HomePageHeader.scss';
 import * as actions from "../../../store/actions";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,6 +16,7 @@ import { FormattedMessage } from 'react-intl';
 import { LANGUAGES } from "../../../utils";
 import { switchLanguageOfWebsite } from "../../../store/actions";
 import { withRouter } from 'react-router';
+import { path } from '../../../utils/constant';
 
 
 class HomePageHeader extends Component {
@@ -132,7 +134,7 @@ class HomePageHeader extends Component {
                         <nav>
                             <ul id="home-top-navigator">
                                 <li><FormattedMessage id="home-top-navigator.option-home" /></li>
-                                <li><i className="far fa-hospital nav-icon"></i><FormattedMessage id="home-top-navigator.option-specialty-exam" /></li>
+                                <li><Link to={path.ALL_SPECIALTIES}  style={{ textDecoration: 'none' }}><i className="far fa-hospital nav-icon"></i><FormattedMessage id="home-top-navigator.option-specialty-exam" /></Link></li>
                                 <li><i className="fas fa-phone-volume nav-icon"></i><FormattedMessage id="home-top-navigator.option-remote-exam" /></li>
                                 <li><i className="fas fa-child nav-icon"></i><FormattedMessage id="home-top-navigator.option-general-exam" /></li>
                                 <li><i className="fas fa-vial nav-icon"></i><FormattedMessage id="home-top-navigator.option-medical-testing" /></li>

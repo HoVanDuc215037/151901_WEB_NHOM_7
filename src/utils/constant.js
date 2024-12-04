@@ -13,6 +13,7 @@ export const path = {
     ALL_SPECIALTIES: '/all-specialties/',
     MEDICAL_FACILITY_ARTICLE: '/detail-medical-facility/:id',
     USER_PROFILE: '/user-profile/:email',
+    CATEGORY: '/category'
 };
 
 export const LANGUAGES = {

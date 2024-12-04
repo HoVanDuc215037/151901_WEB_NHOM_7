@@ -20,10 +20,15 @@
 
             .item-of-slider {
 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 border: 2px solid #3494b5;
                 margin: 10px;
                 border-radius: 10px;
                 cursor: pointer;
+                height: 100%;
 
                 .image-item {
                     // position: relative;
@@ -54,63 +59,63 @@
                 }
 
                 .image-of-item-1 {
-                    background-image: url('../../../../assets/specialty-image/101739-viem-gan.png');
-                }
-
-                .image-of-item-2 {
-                    background-image: url('../../../../assets/specialty-image/101627-cham-cuu.png');
-                }
-
-                .image-of-item-3 {
                     background-image: url('../../../../assets/specialty-image/101627-co-xuong-khop.png');
                 }
 
-                .image-of-item-4 {
-                    background-image: url('../../../../assets/specialty-image/101638-di-ung-mien-dich.png');
-                }
-
-                .image-of-item-5 {
-                    background-image: url('../../../../assets/specialty-image/101627-cot-song.png');
-                }
-
-                .image-of-item-6 {
-                    background-image: url('../../../../assets/specialty-image/101638-da-lieu.png');
-                }
-
-                .image-of-item-7 {
-                    background-image: url('../../../../assets/specialty-image/101655-nhi-khoa.png');
-                }
-
-                .image-of-item-8 {
-                    background-image: url('../../../../assets/specialty-image/101713-san-phu-khoa.png');
-                }
-
-                .image-of-item-9 {
-                    background-image: url('../../../../assets/specialty-image/101713-sieu-am-thai.png');
-                }
-
-                .image-of-item-10 {
-                    background-image: url('../../../../assets/specialty-image/101713-suc-khoe-tam-than.png');
-                }
-
-                .image-of-item-11 {
-                    background-image: url('../../../../assets/specialty-image/101713-tai-mui-hong.png');
-                }
-
-                .image-of-item-12 {
-                    background-image: url('../../../../assets/specialty-image/101713-tieu-hoa.png');
-                }
-
-                .image-of-item-13 {
-                    background-image: url('../../../../assets/specialty-image/101713-tim-mach.png');
-                }
-
-                .image-of-item-14 {
+                .image-of-item-2 {
                     background-image: url('../../../../assets/specialty-image/101739-than-kinh.png');
                 }
 
-                .image-of-item-15 {
+                .image-of-item-3 {
+                    background-image: url('../../../../assets/specialty-image/101713-tieu-hoa.png');
+                }
+
+                .image-of-item-4 {
+                    background-image: url('../../../../assets/specialty-image/101713-tim-mach.png');
+                }
+
+                .image-of-item-5 {
+                    background-image: url('../../../../assets/specialty-image/101713-tai-mui-hong.png');
+                }
+
+                .image-of-item-6 {
+                    background-image: url('../../../../assets/specialty-image/101627-cot-song.png');
+                }
+
+                .image-of-item-7 {
                     background-image: url('../../../../assets/specialty-image/101739-y-hoc-co-truyen.png');
+                }
+
+                .image-of-item-8 {
+                    background-image: url('../../../../assets/specialty-image/101627-cham-cuu.png');
+                }
+
+                .image-of-item-9 {
+                    background-image: url('../../../../assets/specialty-image/101713-san-phu-khoa.png');
+                }
+
+                .image-of-item-10 {
+                    background-image: url('../../../../assets/specialty-image/101713-sieu-am-thai.png');
+                }
+
+                .image-of-item-11 {
+                    background-image: url('../../../../assets/specialty-image/101655-nhi-khoa.png');
+                }
+
+                .image-of-item-12 {
+                    background-image: url('../../../../assets/specialty-image/101638-da-lieu.png');
+                }
+
+                .image-of-item-13 {
+                    background-image: url('../../../../assets/specialty-image/101739-viem-gan.png');
+                }
+
+                .image-of-item-14 {
+                    background-image: url('../../../../assets/specialty-image/101713-suc-khoe-tam-than.png');
+                }
+
+                .image-of-item-15 {
+                    background-image: url('../../../../assets/specialty-image/101638-di-ung-mien-dich.png');
                 }
             }
         }

@@ -91,32 +91,114 @@ class SpecialtySection extends Component {
                         </a></div>
                     </div>
                     <Slider {...settings}>
-                        {arrSpecialty && arrSpecialty.length > 0 &&
-                            arrSpecialty.slice(0, 15).map((item, index) => {
-                                let imageByBase64 = '';
-                                if (item.specialtyImage) {
-                                    imageByBase64 = Buffer.from(item.specialtyImage, 'base64').toString('binary');
-                                }
-                                let nameInVie = `${item.name}`;
-                                let nameInEng = `${item.name}`;
-                                return (
-                                    <div className="item-content" key={index}
-                                        onClick={() => this.handleViewDetailArticleOfASpecialty(item)}
-                                    >
-                                        <div className="item-of-slider">
-                                            <div className="image-css"
-                                                style={{ backgroundImage: `url(${imageByBase64})` }}
-                                            >
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-1 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Cơ Xương Khớp" />
+                                </div>
+                            </div>
+                        </div>
 
-                                            </div>
-                                            <div className="item-content">
-                                                {language === LANGUAGES.VI ? nameInVie : nameInEng}
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-2 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Thần Kinh" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-3 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Tiêu Hóa" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-4 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Tim Mạch" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-5 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Tai Mũi Họng" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-6 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Cột Sống" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-7 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Y Học Cổ Truyền" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-8 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Châm Cứu" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-9 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Sản Phụ Khoa" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-10 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Siêu Âm Thai" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-11 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Nhi Khoa" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-12 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Da Liễu" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-13 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Viêm Gan" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-14 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Sưc Khỏe Tâm Thần" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-content">
+                            <div className="item-of-slider">
+                                <div className="image-of-item-15 image-css"></div>
+                                <div className="item-content"><FormattedMessage id="Dị Ứng Miễn Dịch" />
+                                </div>
+                            </div>
+                        </div>
+
                     </Slider>
                 </div>
             </div >
