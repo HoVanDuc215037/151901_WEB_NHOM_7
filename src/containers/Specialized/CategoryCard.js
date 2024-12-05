@@ -1,13 +1,19 @@
-import React from "react";
-import "../Specialized/CategoryCard.scss"; 
+  import React from "react";
+  import "../Specialized/CategoryCard.scss"; 
+  import { useHistory  } from "react-router-dom";
 
-const CategoryCard = ({ title, icon }) => {
-  return (
-    <div className="category-card">
-      <img src={icon} alt={title} className="category-icon" />
-      <p className="category-title">{title}</p>
-    </div>
-  );
-};
+  const CategoryCard = ({ title, icon, link}) => {
+    const history = useHistory();;
 
-export default CategoryCard;
+    const handleClick = () => {
+      history.push(link); 
+    };
+    return (
+      <div className="category-card" onClick={handleClick}>
+        <img src={icon} alt={title} className="category-icon" />
+        <p className="category-title">{title}</p>
+      </div>
+    );
+  };
+
+  export default CategoryCard;

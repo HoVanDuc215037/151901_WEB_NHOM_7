@@ -16,10 +16,11 @@ import daLieu from '../../assets/specialty-image/101638-da-lieu.png';
 import viemGan from '../../assets/specialty-image/101739-viem-gan.png';
 import sucKhoeTamThan from '../../assets/specialty-image/101713-suc-khoe-tam-than.png';
 import diUngMienDich from '../../assets/specialty-image/101638-di-ung-mien-dich.png';
+import {path} from '../../utils/constant'
 
 
 const categories = [
-  { id: 1, title: "Cơ Xương Khớp", icon: coXuongKhop },
+  { id: 1, title: "Cơ Xương Khớp", icon: coXuongKhop, Link:path.SPECIALTY_ARTICLE},
   { id: 2, title: "Thần kinh", icon: thanKinh },
   { id: 3, title: "Tiêu hoá", icon: tieuHoa },
   { id: 4, title: "Tim mạch", icon: timMach },
@@ -43,7 +44,7 @@ const CategoryGrid = () => {
       <h1 className="title">Khám Chuyên khoa</h1>
       <div className="category-grid">
         {categories.map((category) => (
-          <CategoryCard key={category.id} title={category.title} icon={category.icon} />
+          <CategoryCard key={category.id} title={category.title} icon={category.icon} link={category.link} />
         ))}
       </div>
     </div>
