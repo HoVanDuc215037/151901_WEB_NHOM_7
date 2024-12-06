@@ -65,9 +65,9 @@ class EliteDoctorSection extends Component {
     render() {
         let arrEliteDoctor = this.props.eliteDoctorsData;
         let { language } = this.props;
-
+        const isMobile = window.innerWidth <= 430;
         let settings = {
-            dots: true,
+            dots: isMobile ? false : true,
             infinite: false,
             slidesToShow: 4,
             slidesToScroll: 4,
@@ -82,6 +82,15 @@ class EliteDoctorSection extends Component {
             // fade: true,
             // focusOnSelect: true,
             pauseOnDotsHover: true,
+            responsive: [
+                {
+                    breakpoint: 430,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+            ],
         };
 
         return (
@@ -141,7 +150,7 @@ const mapStateToProps = state => {
     return {
         isLoggedIn: state.user.isLoggedIn,
         language: state.app.language,
-        eliteDoctorsData: state.admin?.eliteDoctors || [],
+        eliteDoctorsData: state.admin.eliteDoctors,
     };
 };
 
