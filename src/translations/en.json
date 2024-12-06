@@ -75,6 +75,24 @@
         "neurology": "Neurology",
         "traditional-medicine": "Traditional Medicine"
     },
+    "specialized": {
+    "specialty-section.specialty-section-title": "Specialty",
+    "specialty.bone-and-joint-disease": "Bone and Joint Disease",
+    "specialty.neurology": "Neurology",
+    "specialty.gastric-disease": "Gastric Disease",
+    "specialty.cardiology": "Cardiology",
+    "specialty.ent": "Ear, Nose, and Throat (ENT)",
+    "specialty.spine": "Spine",
+    "specialty.traditional-medicine": "Traditional Medicine",
+    "specialty.acupuncture": "Acupuncture",
+    "specialty.obstetrics-and-gynecology": "Obstetrics and Gynecology",
+    "specialty.fetal-ultrasound": "Fetal Ultrasound",
+    "specialty.pediatrics": "Pediatrics",
+    "specialty.dermatology": "Dermatology",
+    "specialty.hepatitis": "Hepatitis",
+    "specialty.mental-health": "Mental Health",
+    "specialty.immune-system": "Immune System"
+    },
     "medical-facilities-section": {
         "medical-facilities-section-title": "Medical facilities",
         "button-more-detail": "More",

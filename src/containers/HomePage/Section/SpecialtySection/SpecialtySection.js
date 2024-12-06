@@ -91,7 +91,7 @@ class SpecialtySection extends Component {
                         </a></div>
                     </div>
                     <Slider {...settings}>
-                        <div className="item-content">
+                        {/* <div className="item-content">
                             <div className="item-of-slider">
                                 <div className="image-of-item-1 image-css"></div>
                                 <div className="item-content"><FormattedMessage id="Cơ Xương Khớp" />
@@ -197,7 +197,7 @@ class SpecialtySection extends Component {
                                 <div className="item-content"><FormattedMessage id="Dị Ứng Miễn Dịch" />
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </Slider>
                 </div>
