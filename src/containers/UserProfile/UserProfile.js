@@ -12,7 +12,7 @@ import * as actions from "../../store/actions";
 import { MoonLoader } from 'react-spinners';
 import UserBackgroundContainer from './UserBackgroundContainer/UserBackgroundContainer';
 import { getAllRelativeInforsOfCurrentSystemUserService } from '../../services/userService';
-
+//lazy load làm tốc độ tải của trang web được nhanh hơn
 const PersonalProfile = lazy(() => import('./PersonalProfile/PersonalProfile'));
 const AppointmentInProfilePage = lazy(() => import('./Appointment/AppointmentInProfilePage'));
 

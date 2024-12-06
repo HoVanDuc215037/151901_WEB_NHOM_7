@@ -14,6 +14,7 @@ const UserBackgroundContainer = ({ currentUserEmail, currentUserName, currentUse
     return (
         <React.Fragment>
             <div className="background-and-avatar-container">
+                {/* hiện tại chưa có hỗ trợ ảnh nền cho ng dùng */}
                 <div className="background-section">
 
                 </div>
