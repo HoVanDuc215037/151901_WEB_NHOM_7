@@ -34,6 +34,9 @@ const getAllUsersToDisplayInReact = (userInputId) => {
     //nếu truyền vào userInputId bằng ALL thì lấy hết không thì lấy một user có id = userInpiuId
     return axios.get(`/api/get-all-users-for-react?id=${userInputId}`);
 }
+const createPackageFacility = (inputData) => {
+    return axios.post(`/api/create-exam-package`, inputData);
+}
 
 const createNewUserService = (data) => {
     return axios.post('/api/create-new-user-in-react', data)
@@ -134,6 +137,9 @@ const createMedicalFacility = (inputData) => {
 const getInfoOfMedicalFacility = (facilityId) => {
     return axios.get(`/api/get-info-of-medical-facility?id=${facilityId}`);
 }
+const getAllExamPackageService = (inputData) => {
+    return axios.get(`/api/get-all-exam-package?id=${inputData}`);
+}
 
 export {
     handleLoginAPI,
@@ -161,6 +167,8 @@ export {
     getAllRelativeBookingsOfCurrentSystemUserService,
     getAllSpecialtyAndProvinceForMedicalFacilityManagePage,
     createMedicalFacility,
+    createPackageFacility,
+    getAllExamPackageService,
     getInfoOfMedicalFacility,
 };
 console.log({

@@ -1,23 +1,21 @@
-.container {
-  width: 90%;
+.specialized {
   margin: 0 auto;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
+  padding: 20px;
+  max-width: 1200px;
 
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
 
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  height: calc(100vh - 80px);
+  .category-grid {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Đảm bảo các cột tự động điều chỉnh */
+    gap: 20px; /* Khoảng cách giữa các mục */
+    justify-content: center; /* Canh giữa các mục */
+    align-items: center; /* Canh giữa theo chiều dọc */
+  }
 }

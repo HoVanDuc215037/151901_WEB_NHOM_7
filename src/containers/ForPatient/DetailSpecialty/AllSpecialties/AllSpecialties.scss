@@ -1,0 +1,35 @@
+.specialty-article-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.specialty-item-container {
+    text-align: center;
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+.medical-facility-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+.image-css {
+    width: 100px; 
+    height: 100px;
+    margin: 0 auto 10px; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+}

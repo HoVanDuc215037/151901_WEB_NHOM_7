@@ -308,6 +308,10 @@ body {
         padding          : 0;
 
     }
+    .far fa-hospital nav-icon{
+            text-decoration: none; /* Loại bỏ gạch chân */
+            color: inherit;        /* Giữ nguyên màu chữ */
+    }
 
     #home-top-navigator {
         font-size: 16px;
@@ -361,6 +365,7 @@ body {
         -moz-transform   : translate(0, 0);
         -ms-transform    : translate(0, 0);
         transform        : translate(0, 0);
+        color: inherit;
     }
 
     #home-top-navigator li:nth-child(1):hover~#marker {

@@ -1,8 +1,6 @@
 // Redux-getGender-(2): khai báo action cho admin
 //để sử dụng được file này thì bào index để export
 import actionTypes from './actionTypes';
-
-
 // Redux-getGender-(21): import để gọi api
 import {
     getAllCodesService,
@@ -17,7 +15,8 @@ import {
     createTimeframesForDoctorScheduleService,
     getSpecialtiesForHomePageService,
     getAllRelativeInforsOfCurrentSystemUserService,
-    getInfoOfMedicalFacility
+    getInfoOfMedicalFacility,
+    getAllExamPackageService
 } from "../../services/userService";
 import { toast } from "react-toastify";
 
@@ -476,6 +475,65 @@ export const getBriefInfoOfMedicalFaclityAction = (facilityId) => {
             console.log('Get medical facility brief data fail: ', e);
             dispatch({
                 type: actionTypes.GET_BRIEF_INFO_OF_MEDICAL_FACILITY_FAILED,
+            })
+        }
+    }
+}
+
+export const getRequiredDataForExamPackageManagePage = () => {
+    return async (dispatch, getState) => {
+        try {
+            let resPrice = await getAllCodesService('price');
+            let resMedicalFacility = await getInfoOfMedicalFacility('ALL');
+            let resSpecialty = await getSpecialtiesForHomePageService('');
+
+            if (resPrice && resPrice.errCode === 0 &&
+                resPrice && resPrice.errCode === 0 &&
+                resMedicalFacility && resMedicalFacility.errCode === 0 &&
+                resSpecialty && resSpecialty.errCode === 0) {
+
+                let data = {
+                    resPrice: resPrice.data,
+                    resMedicalFacility: resMedicalFacility.infor,
+                    resSpecialty: resSpecialty.data,
+                }
+
+                dispatch({
+                    type: actionTypes.GET_ALL_RELATIVE_INFOR_FOR_A_EXAM_PACKAGE_SUCCESSFULLY,
+                    data: data,
+                })
+            } else {
+                dispatch({
+                    type: actionTypes.GET_ALL_RELATIVE_INFOR_FOR_A_EXAM_PACKAGE_FAIL,
+                })
+            }
+        } catch (e) {
+            dispatch({
+                type: actionTypes.GET_ALL_RELATIVE_INFOR_FOR_A_EXAM_PACKAGE_FAIL,
+            })
+            console.log('getRequiredDataForExamPackageManagePage function error: ', e);
+        }
+    }
+}
+
+export const getAllExamPackage = (inputId) => {
+    return async (dispatch, getState) => {
+        try {
+            let res = await getAllExamPackageService(inputId);
+            if (res && res.errCode === 0) {
+                dispatch({
+                    type: actionTypes.GET_ALL_EXAM_PACKAGE_SUCCESFULLY,
+                    data: res.infor,
+                })
+            } else {
+                dispatch({
+                    type: actionTypes.GET_ALL_EXAM_PACKAGE_FAIL,
+                })
+            }
+        } catch (e) {
+            console.log('Get all package data fail: ', e);
+            dispatch({
+                type: actionTypes.GET_ALL_EXAM_PACKAGE_FAIL,
             })
         }
     }

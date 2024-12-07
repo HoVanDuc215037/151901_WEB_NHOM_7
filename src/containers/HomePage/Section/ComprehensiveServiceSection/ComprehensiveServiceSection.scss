@@ -59,7 +59,10 @@
         .left-contents {
             width : 40%;
             height: 100px;
-
+            .custom-link {
+                text-decoration: none; 
+                color: inherit;      
+            }
             .specialty-exam {
                 display      : flex;
                 text-align   : center;
