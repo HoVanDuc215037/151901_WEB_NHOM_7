@@ -76,6 +76,15 @@ class SpecialtySection extends Component {
             speed: 1000,
             pauseOnHover: true,
             pauseOnDotsHover: true,
+            responsive: [
+                {
+                    breakpoint: 430,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+            ],
         };
 
         return (
