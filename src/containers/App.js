@@ -25,6 +25,8 @@ import UserProfile from './UserProfile/UserProfile.js';
 import DefaultRegister from './Authenticate/DefaultRegister.js';
 // import DetailMedicalFacility from './ForPatient/DetailMedicalFacility/DetailMedicalFacility.js';
 import AllSpecialties from './ForPatient/DetailSpecialty/AllSpecialties/AllSpecialties.js';
+import ExamGenera from './ExamGeneral/ExamGenera.js';
+import healthcheck from './HealthCheck/HealthCheck.js';
 
 class App extends Component {
 
@@ -77,6 +79,9 @@ class App extends Component {
                                 <Route path={path.ALL_SPECIALTIES} component={AllSpecialties} />
                                 {/* path for doctor*/}
                                 <Route path={'/doctor'} component={userIsNotPatient(userIsAuthenticated(Doctor))} />
+                                <Route path={path.EXAMGENERA} component={ExamGenera} />
+                                <Route path={path.HEALTHCHECK} component={healthcheck} />
+
                             </Switch>
                             {/* </CustomScrollbars> */}
                         </div>

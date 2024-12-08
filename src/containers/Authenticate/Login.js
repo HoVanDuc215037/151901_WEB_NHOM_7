@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { push } from "connected-react-router";
+// import * as actions from "../store/actions";
 import * as actions from "../../store/actions";
 import './Login.scss';
 import { FormattedMessage } from 'react-intl';
 import { handleLoginAPI } from '../../services/userService';
 import CustomScrollbars from '../../components/CustomScrollbars';
-import { getAllRelativeInfoOfCurrentSystemUserAction } from '../../store/actions/adminActions.js';
-
 import { withRouter } from 'react-router';
 
 class Login extends Component {
@@ -147,7 +146,14 @@ class Login extends Component {
                                 <a href="#" onClick={(event) => { this.handleLoginButtonClicked() }}><span>Login</span></a>
                             </div>
                         </div>
-
+                        <div className="col-12">
+                            <div className="account-operation">
+                                <span className="forgot-password">For got your password?</span>
+                                <span className="register-link"
+                                    onClick={() => this.handleRegisterClicked()}
+                                >No account? Register here</span>
+                            </div>
+                        </div>
                         <div className="or-login-with-options">
                             <span>Or login with:</span>
                         </div>

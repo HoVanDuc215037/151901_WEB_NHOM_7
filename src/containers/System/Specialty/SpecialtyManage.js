@@ -53,7 +53,7 @@ class SpecialtyManage extends Component {
         let data = event.target.files;
         let file = data[0];
         if (file) {
-            let imageBase64 = await CommonUtils.getBase65(file);
+            let imageBase64 = await CommonUtils.getBase64(file);
             this.setState({
                 imageBase64: imageBase64,
                 imageSelected: true,

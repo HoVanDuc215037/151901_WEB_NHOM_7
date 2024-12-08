@@ -133,7 +133,7 @@ class ExamPackageManage extends Component {
         let data = event.target.files;
         let file = data[0];
         if (file) {
-            let base64 = await CommonUtils.getBase65(file);
+            let base64 = await CommonUtils.getBase64(file);
             let objectUrl = URL.createObjectURL(file);
             this.setState({
                 previewImageURL: objectUrl,

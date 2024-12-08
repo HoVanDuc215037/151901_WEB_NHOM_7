@@ -136,7 +136,7 @@ class HomePageHeader extends Component {
                                 <li><FormattedMessage id="home-top-navigator.option-home" /></li>
                                 <li><Link to={path.ALL_SPECIALTIES}  style={{ textDecoration: 'none' }}><i className="far fa-hospital nav-icon"></i><FormattedMessage id="home-top-navigator.option-specialty-exam" /></Link></li>
                                 <li><i className="fas fa-phone-volume nav-icon"></i><FormattedMessage id="home-top-navigator.option-remote-exam" /></li>
-                                <li><i className="fas fa-child nav-icon"></i><FormattedMessage id="home-top-navigator.option-general-exam" /></li>
+                                <li><Link to={path.HEALTHCHECK}  style={{ textDecoration: 'none' }}><i className="fas fa-child nav-icon"></i><FormattedMessage id="home-top-navigator.option-general-exam" /></Link></li>
                                 <li><i className="fas fa-vial nav-icon"></i><FormattedMessage id="home-top-navigator.option-medical-testing" /></li>
                                 <li><FontAwesomeIcon icon={faHeartPulse} className="nav-icon fontawesome-icon" /><FormattedMessage id="home-top-navigator.option-mental-health" /></li>
                                 {/* <li><i className="fas fa-tablets nav-icon"></i>Khám nha khoa</li> */}

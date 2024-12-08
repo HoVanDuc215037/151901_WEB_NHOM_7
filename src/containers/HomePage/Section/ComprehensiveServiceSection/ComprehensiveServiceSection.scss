@@ -63,6 +63,14 @@
                 text-decoration: none; 
                 color: inherit;      
             }
+            .custom-link_exam_genera {
+                text-decoration: none;
+                color: inherit;
+              }
+            .custom-link_health_check {
+                text-decoration: none;
+                color: inherit;
+              }
             .specialty-exam {
                 display      : flex;
                 text-align   : center;
@@ -78,12 +86,17 @@
                     background-repeat  : no-repeat;
                 }
             }
-
+            .custom-link-exam-genera {
+                text-decoration: none;
+                color: inherit;      
+            }
             .general-exam {
                 display      : flex;
                 text-align   : center;
                 align-items  : center;
                 margin-bottom: 40px;
+
+
 
                 .check-list-icon {
                     background         : url('../../../../assets/homePageIcon/161350-iconkham-tong-quan.webp');

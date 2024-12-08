@@ -28,10 +28,12 @@ class ComprehensiveServiceSection extends Component {
                             <FormattedMessage id="comprehensive-service-section.option-specialty-exam" />
                         </div>
                         </Link>
+                        <Link to={path.EXAMGENERA} className="custom-link-exam-genera">
                         <div className="general-exam content-background">
                             <div className="service-icon-container"><div className="check-list-icon"></div></div>
                             <FormattedMessage id="comprehensive-service-section.option-general-exam" />
                         </div>
+                        </Link>
                         <div className="mental-health content-background">
                             <div className="service-icon-container"><div className="mental-icon"></div></div>
                             <FormattedMessage id="comprehensive-service-section.option-mental-health" />
@@ -40,10 +42,12 @@ class ComprehensiveServiceSection extends Component {
                             <div className="service-icon-container"><div className="surgery-icon"></div></div>
                             <FormattedMessage id="comprehensive-service-section.option-surgery-pack" />
                         </div>
+                        <Link to={path.HEALTHCHECK} className="custom-link">
                         <div className="health-checkup content-background">
                             <div className="service-icon-container"><div className="health-checkup-icon"></div></div>
                             <FormattedMessage id="comprehensive-service-section.option-health-exam" />
                         </div>
+                        </Link>
                     </div>
                     <div className="right-contents">
                         <div className="remote-exam content-background">
